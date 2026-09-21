@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chi siamo — Atelier VELUT</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div><div class="grain"></div>
+<nav class="nav"><button class="nav-link" data-open="menu">Menu</button><a class="wordmark" href="index.html">VELUT</a><button class="nav-link" id="cartBtn">Borsa <span id="cartCount">0</span></button></nav>
+<aside class="panel" id="menu"><button class="panel-close" data-close>×</button><p class="eyebrow">Atelier</p><a href="index.html">Home</a><a href="collezioni.html">Visualizza tutto</a><a href="collezione-sabbia.html">Sabbia</a><a href="collezione-pietra.html">Pietra</a><a href="collezione-oceano.html">Oceano</a><a href="chi-siamo.html">Chi siamo</a></aside>
+<aside class="panel cart" id="cart"><button class="panel-close" data-close-cart>×</button><p class="eyebrow">Borsa</p><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div class="row"><span>Totale</span><strong id="cartTotal">€ 0</strong></div><button class="btn solid" id="checkout">Richiedi il capo</button></div></aside>
+<header class="hero">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline>
+      <source src="https://videos.pexels.com/video-files/7252270/7252270-hd_1920_1080_25fps.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">Maison</p>
+    <h1>Chi siamo.</h1>
+    <p class="lede">Un tavolo, tre linee, la stessa ostinazione: il capo deve reggere la luce del mattino.</p>
+  </div>
+</header>
+<section class="chi">
+  <div class="chi-grid">
+    <div>
+      <p class="eyebrow">Atelier</p>
+      <h2>VELUT non grida.<br/>Pesa.</h2>
+    </div>
+    <div>
+      <p>Nasciamo come atelier, non come vetrina. Il nome sta per velluto: superficie che assorbe la luce, non che la riflette a vuoto. Lavoriamo poche linee perché ogni centimetro deve avere una ragione.</p>
+      <p>Sabbia, Pietra, Oceano non sono campagne. Sono tre temperature dello stesso taglio. Si entra per il colore, si resta per la caduta.</p>
+      <p>Non produciamo rumore. Produciamo capi che si riconoscono da vicino: la piega, la spalla, il peso in mano. Il resto è silenzio.</p>
+    </div>
+  </div>
+</section>
+<section class="storia">
+  <div class="storia-head">
+    <p class="eyebrow">Metodo</p>
+    <h2>Come si arriva<br/>a un capo VELUT.</h2>
+  </div>
+  <div class="storia-grid">
+    <article class="storia-item">
+      <p class="num">Tessuto</p>
+      <h3>A metro, non a catalogo.</h3>
+      <p>Il panno si sceglie in atelier. Se non ha mano, non ha destinazione.</p>
+    </article>
+    <article class="storia-item">
+      <p class="num">Taglio</p>
+      <h3>La misura prima del segno.</h3>
+      <p>Il cartamodello segue il corpo, non la moda della settimana.</p>
+    </article>
+    <article class="storia-item">
+      <p class="num">Uscita</p>
+      <h3>Due prove. Poi la luce.</h3>
+      <p>Se il capo resiste alla finestra del mattino, può uscire.</p>
+    </article>
+  </div>
+</section>
+<section class="chi">
+  <div class="chi-grid">
+    <div>
+      <p class="eyebrow">Atelier</p>
+      <h2>Dove siamo.</h2>
+    </div>
+    <div class="atelier-meta">
+      <p><strong>Richieste</strong>hello@ateliervelut.com<br/>Ogni capo si richiede. Non si scarica.</p>
+      <p><strong>Orari</strong>Martedì — Sabato<br/>10.00 / 18.00</p>
+      <p><strong>Collezioni</strong>Sabbia · Pietra · Oceano<br/>Autunno in atelier.</p>
+      <p><a class="btn ink" href="collezioni.html">Visualizza tutto</a></p>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div><p class="wordmark">VELUT</p><p>Atelier VELUT</p></div><div><p>hello@ateliervelut.com</p></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
