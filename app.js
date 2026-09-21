@@ -46,3 +46,18 @@ const form = document.getElementById("form");
 if (form) form.addEventListener("submit", (e) => { e.preventDefault(); document.getElementById("formOk").hidden = false; e.target.reset(); });
 document.querySelectorAll(".size").forEach((s) => { s.onclick = () => { document.querySelectorAll(".size").forEach((x) => x.classList.remove("on")); s.classList.add("on"); }; });
 renderCart();
+function kickVideos() {
+  document.querySelectorAll("video").forEach((v) => {
+    v.muted = true;
+    v.defaultMuted = true;
+    v.playsInline = true;
+    v.setAttribute("muted", "");
+    v.setAttribute("playsinline", "");
+    v.removeAttribute("controls");
+    const p = v.play();
+    if (p && p.catch) p.catch(() => {});
+  });
+}
+kickVideos();
+document.addEventListener("visibilitychange", () => { if (!document.hidden) kickVideos(); });
+window.addEventListener("touchstart", kickVideos, { once: true });
