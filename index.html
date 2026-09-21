@@ -30,26 +30,53 @@
     </div>
   </div>
 </header>
-<section class="strip"><span>Sabbia</span><span>Pietra</span><span>Oceano</span><span>Tuta 490 · Maglione 290</span></section>
+<section class="strip"><span>Sabbia</span><span>Pietra</span><span>Oceano</span><span>Collezione Autunno</span></section>
 <section class="manifesto">
   <div><p class="eyebrow">01 / Manifesto</p><h2>Presenza,<br/>non rumore.</h2></div>
   <div class="manifesto-text">
-    <p>Tre collezioni. Un capo per linea. Niente catalogo pieno.</p>
+    <p>Tre collezioni. Un registro per linea. Niente catalogo pieno.</p>
     <p>Il marchio vive nella caduta della spalla, non nel rumore.</p>
   </div>
 </section>
-<section class="collezione">
+<section class="collezione home-looks">
   <article class="product">
+    <div class="product-img"><img id="lookSabbia" alt="Collezione Sabbia"/></div>
     <div class="product-info">
-      <p class="eyebrow">Ora in atelier</p>
-      <h3>Tre collezioni.</h3>
-      <p class="price">Tuta € 490 · Maglione € 290</p>
-      <p>Sabbia, Pietra, Oceano. Entra nella linea, non nello stock.</p>
-      <a class="btn solid" href="collezione-sabbia.html">Apri Sabbia</a>
+      <p class="eyebrow">Collezione 01</p>
+      <h3>Sabbia</h3>
+      <p>Duna, cappotto e hoodie tono su tono. La linea chiara della maison.</p>
+      <a class="btn solid" href="collezione-sabbia.html">Visualizza collezione</a>
+    </div>
+  </article>
+  <article class="product reverse">
+    <div class="product-img"><img id="lookPietra" alt="Collezione Pietra"/></div>
+    <div class="product-info">
+      <p class="eyebrow">Collezione 02</p>
+      <h3>Pietra</h3>
+      <p>Cava, grigio pietra, zip e cappotto. La linea minerale.</p>
+      <a class="btn solid" href="collezione-pietra.html">Visualizza collezione</a>
+    </div>
+  </article>
+  <article class="product">
+    <div class="product-img"><img id="lookOceano" alt="Collezione Oceano"/></div>
+    <div class="product-info">
+      <p class="eyebrow">Collezione 03</p>
+      <h3>Oceano</h3>
+      <p>Costa di notte, blu scuro, bomber sotto il cappotto. La linea fondale.</p>
+      <a class="btn solid" href="collezione-oceano.html">Visualizza collezione</a>
     </div>
   </article>
 </section>
 <footer class="foot"><div><p class="wordmark">VELUT</p><p>Atelier VELUT</p></div><div><p>hello@ateliervelut.com</p></div></footer>
+<script src="look-sabbia.js"></script>
+<script src="look-pietra.js"></script>
+<script src="look-oceano.js"></script>
+<script>
+  const L = window.VELUT_LOOKS || {};
+  [["lookSabbia","sabbia"],["lookPietra","pietra"],["lookOceano","oceano"]].forEach(([id,key]) => {
+    const el = document.getElementById(id); if (el && L[key]) el.src = L[key];
+  });
+</script>
 <script src="app.js"></script>
 </body>
 </html>
