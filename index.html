@@ -40,7 +40,7 @@
 </section>
 <section class="collezione home-looks">
   <article class="product">
-    <div class="product-img"><img id="lookSabbia" alt="Collezione Sabbia"/></div>
+    <div class="product-img"><img src="https://i.imgur.com/UdXTt7d.jpeg" alt="Collezione Sabbia" referrerpolicy="no-referrer"/></div>
     <div class="product-info">
       <p class="eyebrow">Collezione 01</p>
       <h3>Sabbia</h3>
@@ -49,7 +49,7 @@
     </div>
   </article>
   <article class="product reverse">
-    <div class="product-img"><img id="lookPietra" alt="Collezione Pietra"/></div>
+    <div class="product-img"><img src="https://i.imgur.com/T31QSVO.jpeg" alt="Collezione Pietra" referrerpolicy="no-referrer"/></div>
     <div class="product-info">
       <p class="eyebrow">Collezione 02</p>
       <h3>Pietra</h3>
@@ -58,7 +58,7 @@
     </div>
   </article>
   <article class="product">
-    <div class="product-img"><img id="lookOceano" alt="Collezione Oceano"/></div>
+    <div class="product-img"><img src="https://i.imgur.com/yRLjNlA.jpeg" alt="Collezione Oceano" referrerpolicy="no-referrer"/></div>
     <div class="product-info">
       <p class="eyebrow">Collezione 03</p>
       <h3>Oceano</h3>
@@ -68,15 +68,6 @@
   </article>
 </section>
 <footer class="foot"><div><p class="wordmark">VELUT</p><p>Atelier VELUT</p></div><div><p>hello@ateliervelut.com</p></div></footer>
-<script src="look-sabbia.js"></script>
-<script src="look-pietra.js"></script>
-<script src="look-oceano.js"></script>
-<script>
-  const L = window.VELUT_LOOKS || {};
-  [["lookSabbia","sabbia"],["lookPietra","pietra"],["lookOceano","oceano"]].forEach(([id,key]) => {
-    const el = document.getElementById(id); if (el && L[key]) el.src = L[key];
-  });
-</script>
 <script src="app.js"></script>
 </body>
 </html>
